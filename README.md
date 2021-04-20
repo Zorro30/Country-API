@@ -37,7 +37,7 @@ Zip your solution, upload it somewhere, and send us a link to the zipped file.
 ### Bonus
 1. Some scenarios to consider (leave your thoughts inline in your code or edit the README):
   * How efficient is your code?  What are some ways that you could improve performance?
-  > Ans: Calculating the latency of the external API, the code should work fine ideally with 150 requests per minute with a single worker. One can improve the performance by caching(redis) the responses with a 30 min expiry along with horizontally scalling the servers.
+  > Ans: Considering the latency of the external API, the code should work fine ideally with 150 requests per minute with a single worker. One can improve the performance by caching(redis) the responses with a 30 min expiry along with horizontally scalling the servers.
 
   * Suppose we expect this API to be hit 1000s of times a second.  How can we handle the load?
   > Ans: Distributing the load gracefully using Load balancers along with horizontally scalling the servers and having a caching layer which helps in reducing the response time of the API significantly this in turns will help in scaling the system.
