@@ -1,0 +1,10 @@
+rules:
+  no-unused-expressions: [0]
+  func-names: [0]
+  no-console: [0]
+  no-param-reassign: [0]
+env:
+  mocha: true
+ecmaFeatures:
+parserOptions:
+  sourceType: "module"

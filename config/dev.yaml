@@ -1,0 +1,6 @@
+---
+  logging:
+    stdout:
+      enabled: true
+      level: debug
+  env: dev

@@ -1,0 +1,61 @@
+{
+  "name": "country-comparison-api",
+  "version": "1.0.0",
+  "description": "Country Comparison Api",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "NODE_ENV=test mocha --reporter spec --ui bdd 'test/unit/**/*-test.js' --exit",
+    "coverage": "nyc --reporter=lcov --reporter=text --reporter=cobertura npm test",
+    "lint": "./node_modules/.bin/eslint .",
+    "apidoc": "./node_modules/.bin/apidoc-swagger -i src/ -o doc/ && ./node_modules/.bin/apidoc -i src/ -o doc/",
+    "dev": "nodemon src/server.js | bunyan --output short --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaplanTestPrep/country-comparison-api.git"
+  },
+  "keywords": [
+    "node",
+    "restify"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.1.0",
+    "axios": "^0.21.1",
+    "bunyan": "^1.8.5",
+    "co": "^4.6.0",
+    "everyconfig": "^1.0.2",
+    "fs-promise": "^1.0.0",
+    "lodash": "^4.17.21",
+    "restify": "^8.1.0",
+    "restify-errors": "^7.0.0",
+    "restify-plugins": "^1.6.0",
+    "restify-swagger-jsdoc": "^3.2.4",
+    "swagger-jsdoc": "^6.0.2",
+    "swagger-restify": "^1.0.1",
+    "swagger-ui-restify": "^3.0.8",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "apidoc-swagger": "^0.3.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0",
+    "sinon": "^1.17.6",
+    "supertest": "^3.4.2"
+  },
+  "apidoc": {
+    "name": "country-comparison-api",
+    "version": "1.0.0",
+    "description": "Country Comparison Api",
+    "apidoc": {
+      "title": "Country Comparison Api"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+---
+  accept:
+    - application/json
+  server:
+    uri: localhost:3000
+  routes:
+    controllerRootUrl: '/api'
+  logging:
+    stdout:
+      enabled: true
+      level: debug
+  port: 3000
+  env: dev
