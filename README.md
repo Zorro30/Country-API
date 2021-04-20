@@ -15,7 +15,7 @@ Our current stack is primarily built in Node.js, Golang, and .NET.  Since this s
 3. Run `npm test` to run unit tests
 4. Set your NODE_ENV to `dev`
 5. Run `npm start` to start the server
-6. To check documentation please visit, `http://localhost:3000/docs`
+6. To check documentation please visit `http://localhost:3000/docs`
 
 ### Requirements
 
