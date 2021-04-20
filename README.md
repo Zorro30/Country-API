@@ -59,3 +59,5 @@ Zip your solution, upload it somewhere, and send us a link to the zipped file.
 
 <br>
 <i><a name="footnote1"><sup>1</sup></a> Joe says that api.population.io is down, so try https://d6wn6bmjj722w.population.io/ as the host instead.<i>
+
+Also deployed on heroku.
